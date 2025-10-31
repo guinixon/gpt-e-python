@@ -1,0 +1,49 @@
+### Análise do Código
+
+O código apresenta uma classe `dataanalytics` que realiza análises em dados de canais de streaming. Abaixo estão as funcionalidades detalhadas dos métodos dessa classe:
+
+1. **`__init__(self, data: DataFrame)`**
+    - Inicializa a instância da classe com os dados fornecidos.
+    - Cria cópias dos dados e inicializa variáveis temporárias e cache para armazenamento intermediário.
+    
+2. **`getTopChannelByViewers(self, top_n=10)`**
+    - Calcula e retorna os canais com o maior tempo de visualização (em minutos).
+    - Agrupa os dados por canal e soma o tempo de visualização, obtendo os `top_n` maiores resultados.
+    
+3. **`getStreamerStats(self, streamer: str)`**
+    - Retorna estatísticas sobre um streamer específico.
+    - Filtra os dados pelo nome do canal e calcula a média de espectadores, o tempo total de visualização e o tempo total de transmissão.
+    - As estatísticas são retornadas em formato JSON.
+
+4. **`getTopChannelByStreamTime(self, top_n=10)`**
+    - Calcula e retorna os canais com o maior tempo de transmissão.
+    - Agrupa os dados por canal e soma o tempo de transmissão, obtendo os `top_n` maiores resultados.
+
+5. **`getAverageViewersByChannel(self, top_n=10)`**
+    - Calcula e retorna os canais com a maior média de espectadores.
+    - Agrupa os dados por canal e calcula a média de espectadores, obtendo os `top_n` maiores resultados.
+
+### Sugestão de Commit
+
+Com base nas funcionalidades descritas, a mensagem de commit pode ser elaborada da seguinte forma:
+
+---
+
+**Título**
+```plaintext
+✨ Adiciona classe para análise de dados de canais de streaming
+```
+
+**Descrição**
+```plaintext
+- Implementa a classe `dataanalytics` com métodos para análise de dados:
+  - `getTopChannelByViewers`: Obtém os canais com maior tempo de visualização.
+  - `getStreamerStats`: Retorna estatísticas de um streamer específico.
+  - `getTopChannelByStreamTime`: Calcula os canais com maior tempo de transmissão.
+  - `getAverageViewersByChannel`: Obtém os canais com a maior média de espectadores.
+- Inicializa a classe com dados, criando cópias e variáveis temporárias para uso interno.
+```
+
+---
+
+Essa mensagem resume bem a introdução da nova classe `dataanalytics` e descreve as principais funcionalidades implementadas.

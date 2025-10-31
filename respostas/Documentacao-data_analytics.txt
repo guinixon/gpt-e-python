@@ -1,0 +1,3 @@
+A documentação foi adicionada ao script original. As docstrings foram formatadas de acordo com as convenções do PEP 257 e agora cada classe e método inclui uma descrição clara, a lista e descrição dos parâmetros, o tipo e conteúdo dos valores retornados, e exemplos de uso.
+
+Se precisar de mais alguma coisa, estou à disposição!

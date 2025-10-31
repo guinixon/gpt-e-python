@@ -1,0 +1,3 @@
+O script corrigido foi gerado com sucesso. Você pode baixá-lo através do link abaixo:
+
+[Download Script Corrigido](sandbox:/mnt/data/corrected_data_analytics.py)
